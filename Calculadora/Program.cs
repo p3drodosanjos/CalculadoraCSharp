@@ -25,7 +25,7 @@ static void Menu()
         case 2: Subtracao(); break;
         case 3: Divisao(); break;
         case 4: Multiplicacao(); break;
-        case 5: System.Environment.Exit(0); break;
+        case 5: Sair(); break;
         default: Menu(); break;
     }
 
@@ -107,4 +107,11 @@ static void Multiplicacao()
    
     Console.ReadKey();
     Menu();
+}
+
+
+static void Sair()
+{
+    Console.WriteLine("Obrigado por usar a calculadora!");
+    System.Environment.Exit(0);
 }
